@@ -1,0 +1,113 @@
+
+  GET|HEAD  api/admin/export/teachers . generated::rUMB232mnRii52Jc › AdminController@exportTeachers
+  GET|HEAD  api/admin/export/teachers-with-soal generated::wcYpdYmd7OjkMeyN › AdminController@expor…
+  POST      api/admin/login .................... generated::uvnso6nFj0o2q3ev › AdminController@login
+  POST      api/admin/notifications/{commentId}/upload generated::mk7HW7L2IQWjJI42 › AdminControlle…
+  GET|HEAD  api/admin/soal/{soalNumber}/{userId} generated::PIQXTrkxoX6UiJEW › AdminController@getS…
+  POST      api/admin/soal/{soalNumber}/{userId} generated::mObAI8Fy82acdkcQ › AdminController@upda…
+  DELETE    api/admin/soal/{soalNumber}/{userId} generated::qBMVTKXPZs3KlmO4 › AdminController@dele…
+  DELETE    api/admin/soal/{soalNumber}/{userId}/field/{fieldName} generated::JHGtc0LmiTR3LCbV › Ad…
+  GET|HEAD  api/admin/soal/{soalNumber}/{userId}/file/{fieldName} generated::Og3k4ghXPmclCLgm › Adm…
+  GET|HEAD  api/admin/users .................... generated::iHPyALHTHFygnqPl › AdminController@users
+  GET|HEAD  api/admin/users/{userId} ...... generated::TnjAzSSPUBtWCBAj › AdminController@userDetail
+  GET|HEAD  api/admin/users/{userId}/notifications generated::KRjgQG1Czo11lJOb › AdminController@ge…
+  POST      api/admin/users/{userId}/unverify generated::RnhIifg2dJtu115N › AdminController@unverif…
+  POST      api/admin/users/{userId}/verify generated::J5AYuL8CfIP4BKUy › AdminController@verifyUser
+  GET|HEAD  api/check-availability generated::iyOBc71GAsQxOcDR › UjiKompetensiController@checkAvail…
+  POST      api/forgot-password generated::AU302x4wZu9SHT2p › PasswordResetController@forgotPassword
+  POST      api/kumpul ................ generated::0ZBNPG5A47LOxtTt › UjiKompetensiController@submit
+  POST      api/login ................................................ login › LoginController@login
+  POST      api/logout ........................ generated::mMjUCKK53Rt8lMYe › LoginController@logout
+  GET|HEAD  api/notifications ........... generated::aPnmR0MyZMypHP0s › NotificationController@index
+  POST      api/notifications/{commentId}/upload generated::banVdAt1ll6rqfML › NotificationControll…
+  POST      api/notifications/{id}/mark-as-read generated::N0nbFImsv3Zfzn2O › NotificationControlle…
+  POST      api/otp/send .................... generated::IRQWDZq4SN8iuAbL › OTPController@requestOtp
+  POST      api/otp/verify ................... generated::2ijV3lhUhFvwsL9e › OTPController@verifyOtp
+  GET|HEAD  api/overview .................... generated::KYTxs47UOrApKEYn › OverviewController@index
+  GET|HEAD  api/profile ....................... generated::wnkDcwQ5eQl7FLdy › ProfileController@show
+  DELETE    api/profile .................... generated::Smp7X6vXwwRUWXWB › ProfileController@destroy
+  POST      api/register ........................ generated::cinqnJDeAa6Hf5Om › UserController@store
+  POST      api/reset-password . generated::oLqHfKJ34pSAC7zN › PasswordResetController@resetPassword
+  POST      api/soal1 .......................... generated::YxdBeCQlTEyGpVc0 › Soal1Controller@store
+  GET|HEAD  api/soal1 ........................... generated::pa32gKTWRzHHlb2n › Soal1Controller@show
+  PUT       api/soal1 ......................... generated::GsGdOjjFXHyHU3lc › Soal1Controller@update
+  DELETE    api/soal1 ........................ generated::U6LYJgMhsKXGsa1i › Soal1Controller@destroy
+  GET|HEAD  api/soal10 ........................ generated::K8MiZawUGshUmLER › Soal10Controller@index
+  POST      api/soal10 ........................ generated::mDnwXPKhJU7dMSox › Soal10Controller@store
+  DELETE    api/soal10 ...................... generated::IUWMrdtCoowvmbdW › Soal10Controller@destroy
+  GET|HEAD  api/soal11 ........................ generated::r1gqUvjz0BMHLGsY › Soal11Controller@index
+  POST      api/soal11 ........................ generated::7wVMCVsPhWMCEMCa › Soal11Controller@store
+  DELETE    api/soal11 ...................... generated::6tLCoRSptU74OixV › Soal11Controller@destroy
+  GET|HEAD  api/soal12 ........................ generated::rIPVRoMqqOA9cbTf › Soal12Controller@index
+  POST      api/soal12 ........................ generated::jQr0sOZY8TJ5CR4O › Soal12Controller@store
+  DELETE    api/soal12 ...................... generated::PQXvBV5mjGOrNTtW › Soal12Controller@destroy
+  GET|HEAD  api/soal13 ........................ generated::NW5p41HEsYbDGrkQ › Soal13Controller@index
+  POST      api/soal13 ........................ generated::arm7r4fegGPB2UyT › Soal13Controller@store
+  DELETE    api/soal13 ...................... generated::VvIjC7phfzlS8rWX › Soal13Controller@destroy
+  GET|HEAD  api/soal14 ........................ generated::3fDVvuo9bd1Hj6WA › Soal14Controller@index
+  POST      api/soal14 ........................ generated::PJ7NH6MoYjcsZCfj › Soal14Controller@store
+  DELETE    api/soal14 ...................... generated::S8L4Shhef6PPO496 › Soal14Controller@destroy
+  GET|HEAD  api/soal15 ........................ generated::pGJ8duBZMnpIl0bm › Soal15Controller@index
+  POST      api/soal15 ........................ generated::qrh00OIjDlIi26jp › Soal15Controller@store
+  DELETE    api/soal15 ...................... generated::n4BM5KU8shuMZyR8 › Soal15Controller@destroy
+  GET|HEAD  api/soal16 ........................ generated::EsoRurz6leWobLxZ › Soal16Controller@index
+  POST      api/soal16 ........................ generated::0wchmcyDkasDv6h8 › Soal16Controller@store
+  DELETE    api/soal16 ...................... generated::PXwoSRVytEIlj7Zg › Soal16Controller@destroy
+  GET|HEAD  api/soal17 ........................ generated::QFaZHP5Nb61YUphK › Soal17Controller@index
+  POST      api/soal17 ........................ generated::skf4AaBImpCrWujI › Soal17Controller@store
+  DELETE    api/soal17 ...................... generated::sn6E5EyL40M62zPI › Soal17Controller@destroy
+  GET|HEAD  api/soal2 .......................... generated::4CgY2uMzZkluma20 › Soal2Controller@index
+  POST      api/soal2 .......................... generated::iVyYPVIgHTX2wgNC › Soal2Controller@store
+  DELETE    api/soal2 ........................ generated::0XvLCJ8bCTDEPBHE › Soal2Controller@destroy
+  GET|HEAD  api/soal2/download/{field} ...... generated::yYbwzYX4QVxb7bR0 › Soal2Controller@download
+  POST      api/soal3 .......................... generated::KVsJpoig6aStYdfR › Soal3Controller@store
+  GET|HEAD  api/soal3 ........................... generated::4cHdcSg92gT0Vw5F › Soal3Controller@show
+  PUT       api/soal3 ......................... generated::bdm3RKPSKFLmKUoi › Soal3Controller@update
+  DELETE    api/soal3 ........................ generated::G3RWiExPeB5Mgxcc › Soal3Controller@destroy
+  POST      api/soal4 .......................... generated::TT0gF7bmnBq61aGP › Soal4Controller@store
+  GET|HEAD  api/soal4 .......................... generated::fEnNM2p6QMvj0AC4 › Soal4Controller@index
+  DELETE    api/soal4 ........................ generated::hTCWpCKUFHTLraoC › Soal4Controller@destroy
+  GET|HEAD  api/soal5 .......................... generated::Jmy9fQZ2u9Jv2QsK › Soal5Controller@index
+  POST      api/soal5 .......................... generated::xlx85LhP4Q7vi4qd › Soal5Controller@store
+  DELETE    api/soal5 ........................ generated::DCtAp8uzpzyY2ry1 › Soal5Controller@destroy
+  GET|HEAD  api/soal6 .......................... generated::kh1d8141NS6J5Ndo › Soal6Controller@index
+  POST      api/soal6 .......................... generated::Ud0TwVreqI3jp4If › Soal6Controller@store
+  DELETE    api/soal6 ........................ generated::0fg7a16XAnExfU1x › Soal6Controller@destroy
+  GET|HEAD  api/soal7 .......................... generated::pKYARJz7SBs5iicI › Soal7Controller@index
+  POST      api/soal7 .......................... generated::ocywKLXAIOfR2vzB › Soal7Controller@store
+  DELETE    api/soal7 ........................ generated::erGREc7MizRdQvDU › Soal7Controller@destroy
+  GET|HEAD  api/soal8 .......................... generated::n1BAwN6ivdbU5RvQ › Soal8Controller@index
+  POST      api/soal8 .......................... generated::1Q6T1JsH3FhvTPwb › Soal8Controller@store
+  DELETE    api/soal8 ........................ generated::8N6AfgXPahdzOj9G › Soal8Controller@destroy
+  GET|HEAD  api/soal9 .......................... generated::RAGCzt7PfF0YaF93 › Soal9Controller@index
+  POST      api/soal9 .......................... generated::Z2kShS8DS1WLhaEp › Soal9Controller@store
+  DELETE    api/soal9 ........................ generated::pTRj3hpaSyNGhG07 › Soal9Controller@destroy
+  POST      api/submit-competency . generated::y2AphPAM0mAPzzhd › ProfileController@submitCompetency
+  POST      api/update10 ..................... generated::9GEnalALx13VTxJU › Soal10Controller@update
+  POST      api/update11 ..................... generated::zWON93C3LcStgCsn › Soal11Controller@update
+  POST      api/update12 ..................... generated::HzgpO1pgo5LokPJE › Soal12Controller@update
+  POST      api/update13 ..................... generated::Fki3irQdHbmqRCjR › Soal13Controller@update
+  POST      api/update14 ..................... generated::DQrTlT57wBnYkec2 › Soal14Controller@update
+  POST      api/update15 ..................... generated::tkj0E2llo2fbjKUd › Soal15Controller@update
+  POST      api/update16 ..................... generated::5Zdx0Jy1hDV3MLPL › Soal16Controller@update
+  POST      api/update17 ..................... generated::V7YewWsk2Pa8pVi9 › Soal17Controller@update
+  POST      api/update2 ....................... generated::QN2dJFkEUznbHIRU › Soal2Controller@update
+  POST      api/update4 ....................... generated::jSh4smRe20D6R0Gl › Soal4Controller@update
+  POST      api/update5 ....................... generated::kSXcFCFNCc3WQFOL › Soal5Controller@update
+  POST      api/update6 ....................... generated::KL5kQDKAEz5WlIGq › Soal6Controller@update
+  POST      api/update7 ....................... generated::nXljgcwCpSZNHe1g › Soal7Controller@update
+  POST      api/update8 ....................... generated::QC4qnTTZaIbFQCRE › Soal8Controller@update
+  POST      api/update9 ....................... generated::bjUCexqZHaeuh219 › Soal9Controller@update
+  POST      api/updateprofile ............... generated::KBFWtKxgSZqk0UGe › ProfileController@update
+  GET|HEAD  api/users ........................... generated::yzxOWuiwsJNFoHhq › UserController@index
+  GET|HEAD  api/users/profile ................. generated::weaKMiKcBu7ArExG › UserController@profile
+  GET|HEAD  api/users/{user} ..................... generated::JQ1WE5o15Whw7Emi › UserController@show
+  PUT       api/users/{user} ................... generated::V6lHCrZ66VnpEPQg › UserController@update
+  DELETE    api/users/{user} .................. generated::DOe4BjTFnldFHFyf › UserController@destroy
+  GET|HEAD  sanctum/csrf-cookie .. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+  GET|HEAD  storage/{path} ........................................................... storage.local
+  GET|HEAD  test-email ................................................. generated::GVJzR1bO34ib09C5
+  GET|HEAD  up ......................................................... generated::2hqys5rWKF0EQrG6
+
+                                                                                Showing [109] routes
+
