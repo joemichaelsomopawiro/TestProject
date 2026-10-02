@@ -52,7 +52,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/users/{user}', [UserController::class, 'update']);
     Route::delete('/users/{user}', [UserController::class, 'destroy']);
     Route::post('/logout', [LoginController::class, 'logout']);
-    Route::get('/users/profile', [UserController::class, 'profile']);
+    Route::get('/users/profile', [ProfileController::class, 'show']);
 
     Route::post('/soal1', [Soal1Controller::class, 'store']);
     Route::get('/soal1', [Soal1Controller::class, 'show']);
@@ -147,6 +147,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/updateprofile', [ProfileController::class, 'update']);
     Route::delete('/profile', [ProfileController::class, 'destroy']);
     Route::post('/submit-competency', [ProfileController::class, 'submitCompetency']);
+    Route::post('/users/profile/upload-picture', [ProfileController::class, 'uploadProfilePicture']);
+    Route::delete('/users/profile/delete-picture', [ProfileController::class, 'deleteProfilePicture']);
 
     Route::post('/kumpul', [UjiKompetensiController::class, 'submit']);
     Route::get('/check-availability', [UjiKompetensiController::class, 'checkAvailability']);

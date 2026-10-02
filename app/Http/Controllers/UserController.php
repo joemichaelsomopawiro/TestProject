@@ -16,9 +16,25 @@ class UserController extends Controller
             'message' => 'Hooray!! Successfully fetched users',
             'data' => $users->map(function ($user) {
                 return $user->only([
-                    'id', 'name', 'email', 'is_admin', 'email_verified_at', 'profile_picture', 'nilai',
-                    'temporary_score', 'last_submission_date', 'is_verified', 'can_take_test', 'status',
-                    'pekerjaan', 'tanggal_lahir', 'informasi_ipbi', 'domisili', 'NoHp', 'created_at', 'updated_at'
+                    'id',
+                    'name',
+                    'email',
+                    'is_admin',
+                    'email_verified_at',
+                    'profile_picture',
+                    'nilai',
+                    'temporary_score',
+                    'last_submission_date',
+                    'is_verified',
+                    'can_take_test',
+                    'status',
+                    'pekerjaan',
+                    'tanggal_lahir',
+                    'informasi_ipbi',
+                    'domisili',
+                    'NoHp',
+                    'created_at',
+                    'updated_at'
                 ]);
             })
         ], 200);
@@ -39,10 +55,13 @@ class UserController extends Controller
             'can_take_test' => 'nullable|boolean',
             'status' => 'nullable|string',
             'pekerjaan' => 'nullable|string',
-            'tanggal_lahir' => 'nullable|date',
+            'tanggal_lahir' => 'required|date',
             'informasi_ipbi' => 'nullable|string',
             'domisili' => 'nullable|string',
             'NoHp' => 'nullable|string|max:15|unique:users,NoHp', // Validasi NoHp
+        ], [
+            'tanggal_lahir.required' => 'Tanggal lahir wajib diisi untuk verifikasi dan pemulihan akun.',
+            'tanggal_lahir.date' => 'Format tanggal lahir tidak valid.',
         ]);
 
         $user = new User();
@@ -67,9 +86,25 @@ class UserController extends Controller
         return response()->json([
             'message' => 'User created successfully',
             'data' => $user->only([
-                'id', 'name', 'email', 'is_admin', 'email_verified_at', 'profile_picture', 'nilai',
-                'temporary_score', 'last_submission_date', 'is_verified', 'can_take_test', 'status',
-                'pekerjaan', 'tanggal_lahir', 'informasi_ipbi', 'domisili', 'NoHp', 'created_at', 'updated_at'
+                'id',
+                'name',
+                'email',
+                'is_admin',
+                'email_verified_at',
+                'profile_picture',
+                'nilai',
+                'temporary_score',
+                'last_submission_date',
+                'is_verified',
+                'can_take_test',
+                'status',
+                'pekerjaan',
+                'tanggal_lahir',
+                'informasi_ipbi',
+                'domisili',
+                'NoHp',
+                'created_at',
+                'updated_at'
             ]),
         ], 201);
     }
@@ -79,9 +114,25 @@ class UserController extends Controller
         return response()->json([
             'message' => 'Successfully fetched user',
             'data' => $user->only([
-                'id', 'name', 'email', 'is_admin', 'email_verified_at', 'profile_picture', 'nilai',
-                'temporary_score', 'last_submission_date', 'is_verified', 'can_take_test', 'status',
-                'pekerjaan', 'tanggal_lahir', 'informasi_ipbi', 'domisili', 'NoHp', 'created_at', 'updated_at'
+                'id',
+                'name',
+                'email',
+                'is_admin',
+                'email_verified_at',
+                'profile_picture',
+                'nilai',
+                'temporary_score',
+                'last_submission_date',
+                'is_verified',
+                'can_take_test',
+                'status',
+                'pekerjaan',
+                'tanggal_lahir',
+                'informasi_ipbi',
+                'domisili',
+                'NoHp',
+                'created_at',
+                'updated_at'
             ])
         ], 200);
     }
@@ -130,9 +181,25 @@ class UserController extends Controller
         return response()->json([
             'message' => 'User updated successfully',
             'data' => $user->only([
-                'id', 'name', 'email', 'is_admin', 'email_verified_at', 'profile_picture', 'nilai',
-                'temporary_score', 'last_submission_date', 'is_verified', 'can_take_test', 'status',
-                'pekerjaan', 'tanggal_lahir', 'informasi_ipbi', 'domisili', 'NoHp', 'created_at', 'updated_at'
+                'id',
+                'name',
+                'email',
+                'is_admin',
+                'email_verified_at',
+                'profile_picture',
+                'nilai',
+                'temporary_score',
+                'last_submission_date',
+                'is_verified',
+                'can_take_test',
+                'status',
+                'pekerjaan',
+                'tanggal_lahir',
+                'informasi_ipbi',
+                'domisili',
+                'NoHp',
+                'created_at',
+                'updated_at'
             ]),
         ], 200);
     }

@@ -45,7 +45,7 @@ class AdminController extends Controller
             $teachers = User::where('is_admin', false)
                 ->whereNotNull('domisili')
                 ->where('domisili', '!=', '')
-                ->select('id', 'name', 'domisili')
+                ->select('id', 'name', 'domisili', 'NoHp', 'nilai')
                 ->get();
 
             return response()->json([

@@ -36,7 +36,11 @@ class LoginController extends Controller
             'access_token' => $token,
             'token_type' => 'Bearer',
             'message' => 'Login successful',
-            'user' => $user->only(['id', 'name', 'email', 'is_admin']),
+            'user' => $user->only([
+                'id', 'name', 'email', 'is_admin', 'profile_picture', 'nilai',
+                'temporary_score', 'is_verified', 'can_take_test', 'status',
+                'pekerjaan', 'tanggal_lahir', 'informasi_ipbi', 'domisili', 'NoHp'
+            ]),
             'redirect_to' => $redirectTo,
         ], 200);
     }
